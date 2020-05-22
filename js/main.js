@@ -35,13 +35,10 @@ function saveDog(arrDog) {
             auxDog.push(JSON.stringify(localDogs[i]))
         }
 
-        localStorage.clear();
-        localStorage.setItem('myDogs',  auxDog);
-        getLocalStorage();
+        setToLocalStorage(auxDog);        
         alertMessages('success'); 
     } else{
-        localStorage.setItem('myDogs', arrDog);
-        getLocalStorage();
+        setToLocalStorage(arrDog);
         alertMessages('success'); 
     }
 }
@@ -114,14 +111,4 @@ function getColor(color){
         break;
     }
     return retColor
-}
-
-function alertMessages(type){
-    $(`.alert-${type}`).removeClass('hidden');
-
-    setInterval(function(){
-        if($(`.alert-${type}`).is(":visible")){
-           $(`.alert-${type}`).hide();
-        }
-    }, 5000);
 }
