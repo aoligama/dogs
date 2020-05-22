@@ -60,11 +60,12 @@ main {
     flex: 1;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 main ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     list-style: none;
 }
@@ -113,4 +114,34 @@ li.dog-item a:hover {
 
 .hidden {
     display: none;
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
+    main ul {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        max-width: 1200px;
+    }
+}
+  
+@media (max-width: 930px) {
+    main ul {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    main {
+        max-width: 930px;
+    }
+}
+  
+@media (max-width: 580px) {
+    main ul {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    main {
+        max-width: 580px;
+    }
 }
