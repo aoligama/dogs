@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Indie+Flower&family=Kanit&family=Nunito+Sans&family=Oswald:wght@200&family=Pacifico&display=swap');
+
+html, body { 
+    height: 100%; 
+    overflow-x: hidden !important;
+}
+
+body { 
+    margin: 0; 
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+
+h3 {
+    font-family: 'Pacifico', cursive;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    padding: 2em 0;
+}
+
+.input-dog {
+    width: 90%;
+    display: flex;
+    padding: 1em 0;
+    justify-content: center;
+}
+
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.nunito {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.arimo {
+    font-family: 'Arimo', sans-serif;
+}
+
+.indie {
+    font-family: 'Indie Flower', cursive;
+}
+
+.kanit {
+    font-family: 'Kanit', sans-serif;
+}
+
+main {
+    margin-top: 15px !important;
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style: none;
+}
+
+li.dog-item {
+    background: #FFF;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+li.dog-item header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li.dog-item img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
+
+li.dog-item header .user-info {
+    margin-left: 10px;
+}
+
+li.dog-item a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+li.dog-item a:hover {
+    color: #5A2EA6
+} 
+
+.dog-info strong {
+    font-size: 20px;
+}
+
+#dogImage {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}

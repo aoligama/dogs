@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/api.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <meta charset="UTF-8">
+        <title>Challenge Enext</title>
+    </head>
+
+    <body> 
+        <div class="container">
+            <h1>Cachorros</h1>
+
+            <img id="dogImage">
+
+            <br />
+
+            <div class="input-dog">
+                &nbsp;&nbsp;
+                <select class="form-control" id="breedDog" onchange="requestDogImg()">
+                    <option value="" selected>Raças</option>
+                </select>
+                &nbsp;&nbsp;
+                <input class="form-control" placeholder="Nome" id="dogName"/>
+                &nbsp;&nbsp;
+                <select class="form-control" id="dogColor">
+                    <option value="">Cor</option>
+                    <option value="az" class="text-primary">Azul</option>
+                    <option value="ci" class="text-secondary">Cinza</option>
+                    <option value="vd" class="text-success">Verde</option>
+                    <option value="vm" class="text-danger">Vermelho</option>
+                    <option value="am" class="text-warning">Amarelo</option>
+                </select>
+                &nbsp;&nbsp;
+                <select class="form-control" id="fonte">
+                    <option value="" selected>Fonte</option>
+                    <option value="os" class="oswald">Oswald</option>
+                    <option value="nu" class="nunito">Nunito</option>
+                    <option value="ar" class="arimo">Arimo</option>
+                    <option value="in" class="indie">Indie Flower</option>
+                    <option value="ka" class="kanit">Kanit</option>
+                </select>
+                &nbsp;&nbsp;
+                <button class="btn btn-primary" onclick="validFields()">Salvar</button>
+                <br />
+            </div>
+
+            <div class="alert alert-success hidden" role="alert">
+                Novo cachorro adicionado com sucesso!
+            </div>
+            <div class="alert alert-warning hidden" role="alert">
+                Preencha todos os campos!
+            </div>
+
+            <br /><br />
+            <h3>Meus Cachorros</h3>
+        </div>
+        
+        <main>
+            <ul id="listDogs"></ul>
+        </main>
+
+    </body>
+</html>
