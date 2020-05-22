@@ -7,9 +7,9 @@ Feito com HTML, CSS e JavaScript.
 Consumindo a [DOG API](https://dog.ceo/dog-api/documentation/)
 
 
-## Como Acessar
+## Como Utilizar
 
-Para acessar o projeto Dogs, acesse este [link](https://aoligama.github.io/challenge-enext/)
+Para utilizar o projeto Dogs, acesse este [LINK](https://aoligama.github.io/challenge-enext/)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
